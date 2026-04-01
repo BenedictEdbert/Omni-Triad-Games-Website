@@ -1,0 +1,432 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+    background-image: url("Website_Screensaver.gif");
+    background-position: center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header_container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 5px 5px orange;
+    width: 100vw;
+}
+
+.footer_container {
+    background-color: black;
+    display: block;
+    align-items: center;
+    z-index: 1;
+    margin-top: 100px;
+    padding-top: 50px;
+    box-shadow: 0px -5px 5px orange;
+    height: 200px;
+    width: 100vw;
+    text-align: center;
+}
+
+.sections_btn {
+    border: none;
+    color: white;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.sections_btn:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.body_container {
+    padding: 30px;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header_text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.profile_name {
+    font-size: 20px;
+}
+
+.profile_work {
+    color: orange;
+}
+
+.profile_img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.game_date, .game_desc {
+    color: orange;
+}
+
+.game_name, .game_date, .game_desc {
+    text-align: left;
+}
+
+.game_img {
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#devlog_container {
+    display: flex;
+}
+
+#game_picture, #game_desc {
+    flex: 1;
+}
+
+#updates_list {
+    display: flex;
+}
+
+#updates_img, #updates_desc {
+    flex: 1;
+}
+
+.update_img {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.updates_main_text {
+    color: orange;
+}
+
+.updates_main_text, .updates_subtext {
+    text-align: left;
+}
+
+.tiktok_container, .youtube_container, .x_container, .instagram_container, .email_container, .itchio_container {
+    display: flex;
+}
+
+.contacts_img, .contacts.desc {
+    flex: 1;
+}
+
+.contacts_picture {
+    display: flex;
+}
+
+.contacts_text {
+    text-align: left;
+}
+
+.footer_contacts:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.contacts_picture:hover {
+    opacity: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .footer_container {
+        font-size: 15px;
+    }
+
+    .footer_contacts {
+        width: 30px;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .sections_container {
+        margin-left: 0px;
+    }
+
+    .sections_btn {
+        font-size: 9px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .header_text {
+        font-size: 25px;
+    }
+
+    .updates_title {
+        font-size: 20px;
+    }
+
+    #updates_desc {
+        margin-right: 15px;
+    }
+
+    .updates_main_text {
+        font-size: 20px;
+    }
+
+    .updates_subtext {
+        font-size: 15px;
+    }
+
+    .update_img {
+        width: 100px;
+    }
+
+    .game_img {
+        width: 100px;
+    }
+
+    #game_picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #game_desc {
+        margin-right: 15px;
+    }
+
+    .game_name {
+        font-size: 20px;
+    }
+
+    .game_date, .game_desc {
+        font-size: 15px;
+    }
+
+    .introduction {
+        font-size: 15px;
+    }
+    .profile_img {
+        width: 200px;
+    }
+
+    .contacts_picture {
+        width: 50px;
+    }
+
+    .contacts_img {
+        padding-left: 10px;
+    }
+
+    .contacts_text {
+        font-size: 15px;
+    }
+
+    .contacts_desc {
+        padding-right: 85px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .footer_contacts {
+        width: 50px;
+        margin-top: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .sections_container {
+        margin-left: 50px;
+    }
+
+    .sections_btn {
+        font-size: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .header_text {
+        font-size: 25px;
+    }
+
+    .updates_title {
+        font-size: 20px;
+    }
+
+    #updates_desc {
+        margin-right: 100px;
+    }
+
+    .updates_main_text {
+        font-size: 20px;
+    }
+
+    .updates_subtext {
+        font-size: 15px;
+    }
+
+    .update_img {
+        width: 100px;
+    }
+
+    .game_img {
+        width: 100px;
+    }
+
+    #game_picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #game_desc {
+        margin-right: 15px;
+    }
+
+    .game_name {
+        font-size: 20px;
+    }
+
+    .game_date, .game_desc {
+        font-size: 15px;
+    }
+
+    .introduction {
+        font-size: 15px;
+    }
+    .profile_img {
+        width: 200px;
+    }
+
+    .contacts_picture {
+        width: 50px;
+    }
+
+    .contacts_img {
+        padding-left: 10px;
+    }
+
+    .contacts_text {
+        font-size: 15px;
+    }
+
+    .contacts_desc {
+        padding-right: 450px;
+        padding-left: 44px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .footer_contacts {
+        width: 50px;
+        margin-top: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .sections_container {
+        margin-left: 140px;
+    }
+
+    .sections_btn {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .header_text {
+        font-size: 50px;
+    }
+
+    .updates_title {
+        font-size: 30px;
+    }
+    
+    #updates_desc {
+        margin-right: 200px;
+    }
+
+    .updates_main_text {
+        font-size: 30px;
+    }
+
+    .updates_subtext {
+        font-size: 20px;
+    }
+
+    #updates_img {
+        padding-right: 150px;
+    }
+
+    .update_img {
+        width: 200px;
+    }
+
+    .game_img {
+        width: 200px;
+    }
+
+    #game_desc {
+        margin-right: 100px;
+    }
+
+    .game_name {
+        font-size: 25px;
+    }
+
+    .introduction {
+        font-size: 20px;
+    }
+
+    .profile_img {
+        width: 300px;
+    }
+
+    .contacts_picture {
+        width: 100px;
+    }
+
+    .contacts_img {
+        padding-left: 50px;
+    }
+
+    .contacts_text {
+        font-size: 30px;
+    }
+
+    .contacts_desc {
+        padding-right: 720px;
+        padding-left: 72px;
+    }
+}
