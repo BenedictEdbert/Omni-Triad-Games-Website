@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Omni Triad Games Icon.png">
+    <title>Omni Triad Games</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header_container">
+            <img src="Omni Triad Games.png" class="logo" width="100px">
+            <div class="sections_container">
+                <button class="sections_btn" id="home_btn" onclick="homePage()">| HOME |</button>
+                <button class="sections_btn" id="games_btn" onclick="gamesPage()">| GAMES |</button>
+                <button class="sections_btn" id="about_us_btn" onclick="aboutUsPage()">| ABOUT US |</button>
+                <button class="sections_btn" id="contacts_btn" onclick="contactsPage()">| CONTACTS |</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="body_container">
+            <div id="home_page">
+                <div class="hidden" id="intro_container">
+                    <h1 class="header_text">WELCOME TO THE OMNI TRIAD GAMES WEBSITE</h1>
+                    <p class="studio_desc"><i>Where We Make Games With Care</i></p>
+                </div>
+                <div class="hidden" id="updates_container">
+                    <br>
+                    <br>
+                    <br>
+                    <p class="updates_title"><i>Check Our Latest Updates</i></p>
+                    <br>
+                    <br>
+                    <div class="updates_list">
+                        <div class="updates_img">
+                            <img src="Dev-Log_Icon.png" class="update_img">
+                        </div>
+                        <div class="updates_desc">
+                            <p class="updates_main_text"><i>17/03/26</i></p>
+                            <p class="updates_subtext">Our first game "Dev-Log" v1.0.0 has been officially released on Itch.io on March 17th 2026.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="updates_list">
+                        <div class="updates_img">
+                            <img src="Dev-Log_Icon.png" class="update_img">
+                        </div>
+                        <div class="updates_desc">
+                            <p class="updates_main_text"><i>02/04/26</i></p>
+                            <p class="updates_subtext">We have released a version 1.0.1 patch for Dev-Log which fixes some bugs. All fixes: <br>
+                                - The Past Ones no longer   
+                                glitches when dying and teleporting the player at the same time.<br>
+                                - The player can no longer attack when possessed as well as when in other conditions (i.e., possessed, swimming, in menu, and in inventory)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="games_page">
+                <div id="game_container">
+                    <div class="hidden" id="intro_container">
+                        <h1 class="header_text">OUR RELEASES</h1>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="hidden" id="devlog_container">
+                        <div id="game_picture">
+                            <img src="Dev-Log_Icon.png" class="game_img">
+                        </div>
+                        <div id="game_desc">
+                            <p class="game_name">DEV-LOG</p>
+                            <p class="game_date"><i>Released in March 17th 2026</i></p>
+                            <p class="game_desc">A meta horror game about finding the horrible truth about the fate of your love through your game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="about_us_page">
+                <div class="hidden" id="intro_container">
+                    <h1 class="header_text">INTRODUCTION</h1>
+                    <p class="introduction">We are Omni Triad Games. Our goal is to create games that are entertaining for you and for us. We are all passionate about gaming and with that, we intent to bring you the best that we have in store.</p>
+                    <p class="introduction">The name Omni Triad Games comes from 2 psychological theories, the dark triad and the light triad. The dark triad represents narcissism, psychopathy, and machiavellianism, while the light triad represents a benign, caring, and prosocial orientation toward others.</p>
+                    <p class="introduction">Hence the name Omni Triad Games means a balance of these two sides, representing us as humans. We all have some degree of dark and light side to us. Which represents the humanity of our studio.</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="hidden" id="team_container">
+                    <h1 class="header_text">OUR TEAM</h1>
+                    <p class="profile_name">Benedict Edbert Kameswara</p>
+                    <img src="Ben_PFP.png" class="profile_img">
+                    <p class="profile_work">-Programmer</p>
+                    <p class="profile_work">-2D Artist</p>
+                    <p class="profile_work">-Writer</p>
+                    <p class="profile_work">-Music & SFX</p>
+                    <br>
+                    <br>
+                    <p class="profile_name">Christian Suwondo</p>
+                    <img src="Christian_PFP.png" class="profile_img">
+                    <p class="profile_work">-Programmer</p>
+                    <p class="profile_work">-3D Artist</p>
+                    <p class="profile_work">-Writer</p>
+                    <p class="profile_work">-Marketing</p>
+                    <br>
+                    <br>
+                    <p class="profile_name">Vaughan Nate Osvaldo</p>
+                    <img src="Vaughan_PFP.png" class="profile_img">
+                    <p class="profile_work">-2D Artist</p>
+                    <p class="profile_work">-Level Designer</p>
+                </div>
+            </div>
+            <div id="contacts_page">
+                <div class="hidden" id="contacts_container">
+                    <h1 class="header_text">CONTACTS & SOCIAL MEDIA</h1>
+                    <div class="youtube_container">
+                        <div class="contacts_img">
+                            <a href="https://www.youtube.com/@OmniTriadGames">
+                            <img src="Youtube_White.png" class="contacts_picture"></a>
+                        </div>
+                        <div class="contacts_desc">
+                            <p class="contacts_text">Omni Triad Games</p>
+                        </div>
+                    </div>
+                    <div class="instagram_container">
+                        <div class="contacts_img">
+                            <a href="https://www.instagram.com/omnitriadgames/">
+                            <img src="Instagram_White.png" class="contacts_picture"></a>
+                        </div>
+                        <div class="contacts_desc">
+                            <p class="contacts_text">@omnitriadgames</p>
+                        </div>
+                    </div>
+                    <div class="x_container">
+                        <div class="contacts_img">
+                            <a href="https://x.com/OmniTriadGames"><img src="X_Logo_White.png" class="contacts_picture"></a>
+                        </div>
+                        <div class="contacts_desc">
+                            <p class="contacts_text">@omnitriadgames</p>
+                        </div>
+                    </div>
+                    <div class="email_container">
+                        <div class="contacts_img">
+                            <a href="mailto:omnitriadgames@gmail.com"><img src="Email_White.png" class="contacts_picture"></a>
+                        </div>
+                        <div class="contacts_desc">
+                            <p class="contacts_text">omnitriadgames@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="itchio_container">
+                        <div class="contacts_img">
+                            <a href="https://omni-triad-games.itch.io"><img src="ItchIO_White.png" class="contacts_picture"></a>
+                        </div>
+                        <div class="contacts_desc">
+                            <p class="contacts_text">Omni Triad Games</p>
+                        </div>
+                    </div>
+                    <div class="tiktok_container">
+                        <div class="contacts_img">
+                            <a href="https://www.tiktok.com/@omni_triad_games"><img src="TikTok_White.png" class="contacts_picture"></a>
+                        </div>
+                        <div class="contacts_desc">
+                            <p class="contacts_text">omni_triad_games</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_container">
+            <p class="footer_desc"><i>We are a small indie game studio that intends to make a variety of games of variety of genres.</i></p>
+            <a href="https://www.instagram.com/omnitriadgames/"><img src="Instagram_White.png" class="footer_contacts"></a>
+            <a href="https://www.youtube.com/@OmniTriadGames"><img src="Youtube_White.png" class="footer_contacts"></a>
+            <a href="https://x.com/OmniTriadGames"><img src="X_Logo_White.png" class="footer_contacts"></a>
+            <a href="https://omni-triad-games.itch.io"><img src="ItchIO_White.png" class="footer_contacts"></a>
+            <a href="mailto:omnitriadgames@gmail.com"><img src="Email_White.png" class="footer_contacts"></a>
+            <a href="https://www.tiktok.com/@omni_triad_games"><img src="TikTok_White.png" class="footer_contacts"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
